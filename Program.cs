@@ -1,3 +1,3 @@
 ﻿using CSharpIntermediateChallenges.ClassesChallenges;
 
-Stopwatch.RunProgram();
+StackOverflow.RunApplication();
