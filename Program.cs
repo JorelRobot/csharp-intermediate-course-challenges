@@ -1,3 +1,3 @@
-﻿using CSharpIntermediateChallenges.ClassesChallenges;
+﻿using CSharpIntermediateChallenges.InheritanceChallenges;
 
-StackOverflow.RunApplication();
+DesigningStack.RunApplication();

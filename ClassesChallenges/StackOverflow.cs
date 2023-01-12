@@ -1,3 +1,4 @@
+
 namespace CSharpIntermediateChallenges.ClassesChallenges
 {
     public class StackOverflow
