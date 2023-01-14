@@ -1,3 +1,3 @@
-﻿using CSharpIntermediateChallenges.InheritanceChallenges;
+﻿using CSharpIntermediateChallenges.PolymorphismChallenge;
 
-DesigningStack.RunApplication();
+DbConnectionChallenge.RunApplication();
