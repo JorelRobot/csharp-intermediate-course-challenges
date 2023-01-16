@@ -26,6 +26,7 @@ namespace CSharpIntermediateChallenges.PolymorphismChallenge
     {
         public string StringConnection { get; set; } = "";
         public TimeSpan Timeout { get; set; } = TimeSpan.FromSeconds(5);
+        public bool isOpened { get; set; } = false;
 
         public abstract void Open();
         public abstract void Close();
@@ -35,13 +36,17 @@ namespace CSharpIntermediateChallenges.PolymorphismChallenge
     {
         public override void Close()
         {
+            if (!isOpened) throw new Exception("The connections is already closed");
+
+            isOpened = false;
             System.Console.WriteLine("SQL Database closed successfully");
         }
 
         public override void Open()
         {
             if (string.IsNullOrWhiteSpace(StringConnection)) throw new Exception("String connection must not be empty");
-            
+
+            isOpened = true;
             System.Console.WriteLine("SQL Database opened successfully");
         }
     }
@@ -50,13 +55,17 @@ namespace CSharpIntermediateChallenges.PolymorphismChallenge
     {
         public override void Close()
         {
+            if (!isOpened) throw new Exception("The connections is already closed");
+
+            isOpened = false;
             System.Console.WriteLine("Oracle Database closed successfully");
         }
 
         public override void Open()
         {
             if (string.IsNullOrWhiteSpace(StringConnection)) throw new Exception("String connection must not be empty");
-            
+
+            isOpened = true;
             System.Console.WriteLine("Oracle Database opened successfully");
         }
     }

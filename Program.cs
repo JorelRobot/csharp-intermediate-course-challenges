@@ -1,3 +1,5 @@
-﻿using CSharpIntermediateChallenges.PolymorphismChallenge;
+﻿using CSharpIntermediateChallenges;
+using CSharpIntermediateChallenges.PolymorphismChallenge;
 
-DbConnectionChallenge.RunApplication();
+ChallengeAppliication appliication = new DbCommandChallenge();
+appliication.RunApplication();
