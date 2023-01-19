@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediateChallenges.PolymorphismChallenge
 {
-    public class DbCommandChallenge : ChallengeAppliication
+    public class DbCommandChallenge : ChallengeApplication
     {
         public void RunApplication()
         {

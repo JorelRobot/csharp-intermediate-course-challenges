@@ -1,5 +1,5 @@
 ﻿using CSharpIntermediateChallenges;
-using CSharpIntermediateChallenges.InterfaceChalenges;
+using CSharpIntermediateChallenges.AdvanceCourse.Lectures.Generics;
 
-ChallengeAppliication appliication = new WorkflowEngine();
-appliication.RunApplication();
+ChallengeApplication application = new GenericsApplication();
+application.RunApplication();
